@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/99f4fcd9-845e-420b-8f7b-bc9f4e5fbde3/resourceGroups/presales-apac-k/providers/Microsoft.Web/sites/CharelsWorkdayApp",
+    "appService.deploySubpath": "."
+}

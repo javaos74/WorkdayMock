@@ -1,0 +1,184 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bsvc:Launch_EIB_Response bsvc:version="?">
+         <!--Zero or more repetitions:-->
+         <bsvc:Application_Instance_Exceptions>
+            <!--Zero or more repetitions:-->
+            <bsvc:Exception_Data>
+               <!--Optional:-->
+               <bsvc:Classification>?</bsvc:Classification>
+               <!--Optional:-->
+               <bsvc:Message>?</bsvc:Message>
+            </bsvc:Exception_Data>
+         </bsvc:Application_Instance_Exceptions>
+         <!--Optional:-->
+         <bsvc:Integration_Event>
+            <!--Optional:-->
+            <bsvc:Integration_Event_Reference bsvc:Descriptor="?">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="?">?</bsvc:ID>
+            </bsvc:Integration_Event_Reference>
+            <!--Optional:-->
+            <bsvc:Integration_Event_Data>
+               <!--Optional:-->
+               <bsvc:Integration_System_Reference bsvc:Descriptor="?">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="?">?</bsvc:ID>
+               </bsvc:Integration_System_Reference>
+               <!--Optional:-->
+               <bsvc:Process_Description>?</bsvc:Process_Description>
+               <!--Optional:-->
+               <bsvc:Initiated_DateTime>?</bsvc:Initiated_DateTime>
+               <!--Optional:-->
+               <bsvc:Integration_Response_Message>?</bsvc:Integration_Response_Message>
+               <!--Optional:-->
+               <bsvc:Completed_DateTime>?</bsvc:Completed_DateTime>
+               <!--Zero or more repetitions:-->
+               <bsvc:Integration_Event_Member_Reference bsvc:Descriptor="?">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="?" bsvc:parent_id="?" bsvc:parent_type="?">?</bsvc:ID>
+               </bsvc:Integration_Event_Member_Reference>
+               <!--Optional:-->
+               <bsvc:Initiated_By_System_Account_Reference bsvc:Descriptor="?">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="?">?</bsvc:ID>
+               </bsvc:Initiated_By_System_Account_Reference>
+               <!--Optional:-->
+               <bsvc:Percent_Complete>?</bsvc:Percent_Complete>
+               <!--Zero or more repetitions:-->
+               <bsvc:Integration_Runtime_Parameter_Data>
+                  <!--Optional:-->
+                  <bsvc:Launch_Configurable_Name>?</bsvc:Launch_Configurable_Name>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Parameter_Name bsvc:Label="?">?</bsvc:Parameter_Name>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Text bsvc:Sensitive="?">?</bsvc:Text>
+                  <!--Optional:-->
+                  <bsvc:Date>?</bsvc:Date>
+                  <!--Optional:-->
+                  <bsvc:Boolean>?</bsvc:Boolean>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Instance_Set_Reference bsvc:Descriptor="?">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:parent_id="?" bsvc:parent_type="?" bsvc:type="?">?</bsvc:ID>
+                  </bsvc:Instance_Set_Reference>
+               </bsvc:Integration_Runtime_Parameter_Data>
+               <!--Zero or more repetitions:-->
+               <bsvc:Integration_Service_Generated_Sequence_Data>
+                  <!--Optional:-->
+                  <bsvc:Integration_Service_Reference bsvc:Descriptor="?">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="?">?</bsvc:ID>
+                  </bsvc:Integration_Service_Reference>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Integration_Sequencer_Generated_Sequence_Data>
+                     <!--Optional:-->
+                     <bsvc:Integration_Sequencer_Reference bsvc:Descriptor="?">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="?" bsvc:parent_id="?" bsvc:parent_type="?">?</bsvc:ID>
+                     </bsvc:Integration_Sequencer_Reference>
+                     <!--Optional:-->
+                     <bsvc:Sequenced_Value>?</bsvc:Sequenced_Value>
+                  </bsvc:Integration_Sequencer_Generated_Sequence_Data>
+               </bsvc:Integration_Service_Generated_Sequence_Data>
+               <!--Zero or more repetitions:-->
+               <bsvc:Integration_Enterprise_Event_Records_Data>
+                  <!--Optional:-->
+                  <bsvc:Total_Records>?</bsvc:Total_Records>
+                  <!--Optional:-->
+                  <bsvc:Total_Records_Uploaded>?</bsvc:Total_Records_Uploaded>
+                  <!--Optional:-->
+                  <bsvc:Total_Failed_Records>?</bsvc:Total_Failed_Records>
+               </bsvc:Integration_Enterprise_Event_Records_Data>
+            </bsvc:Integration_Event_Data>
+            <!--Optional:-->
+            <bsvc:Background_Process_Instance_Data>
+               <!--Optional:-->
+               <bsvc:Background_Process_Instance_Status_Reference bsvc:Descriptor="?">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="?">?</bsvc:ID>
+               </bsvc:Background_Process_Instance_Status_Reference>
+               <!--Optional:-->
+               <bsvc:Parent_Event_Reference bsvc:Descriptor="?">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="?">?</bsvc:ID>
+               </bsvc:Parent_Event_Reference>
+               <!--Zero or more repetitions:-->
+               <bsvc:Background_Process_Message_Data>
+                  <!--Optional:-->
+                  <bsvc:Timestamp>?</bsvc:Timestamp>
+                  <!--Optional:-->
+                  <bsvc:Severity_Level_Reference bsvc:Descriptor="?">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="?">?</bsvc:ID>
+                  </bsvc:Severity_Level_Reference>
+                  <!--Optional:-->
+                  <bsvc:Message_Summary>?</bsvc:Message_Summary>
+                  <!--Optional:-->
+                  <bsvc:Message_Detail>?</bsvc:Message_Detail>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Message_Target_Reference bsvc:Descriptor="?">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:parent_id="?" bsvc:parent_type="?" bsvc:type="?">?</bsvc:ID>
+                  </bsvc:Message_Target_Reference>
+               </bsvc:Background_Process_Message_Data>
+               <!--Zero or more repetitions:-->
+               <bsvc:Output_Document_Data>
+                  <!--Optional:-->
+                  <bsvc:Integration_Repository_Document_Reference bsvc:Descriptor="?">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="?">?</bsvc:ID>
+                  </bsvc:Integration_Repository_Document_Reference>
+                  <!--Optional:-->
+                  <bsvc:Integration_Repository_Document_Data bsvc:Document_ID="?" bsvc:File_Name="?">
+                     <!--Optional:-->
+                     <bsvc:File_Size>?</bsvc:File_Size>
+                     <!--You have a CHOICE of the next 2 items at this level-->
+                     <!--Optional:-->
+                     <bsvc:Content_Type_Reference bsvc:Descriptor="?">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="?">?</bsvc:ID>
+                     </bsvc:Content_Type_Reference>
+                     <!--Optional:-->
+                     <bsvc:Content_Type>?</bsvc:Content_Type>
+                     <!--Optional:-->
+                     <bsvc:Document_Type_Reference bsvc:Descriptor="?">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="?">?</bsvc:ID>
+                     </bsvc:Document_Type_Reference>
+                     <bsvc:Expiration_Timestamp>?</bsvc:Expiration_Timestamp>
+                     <!--Optional:-->
+                     <bsvc:Owner_Reference bsvc:Descriptor="?">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="?">?</bsvc:ID>
+                     </bsvc:Owner_Reference>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Document_Tag_Reference bsvc:Descriptor="?">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="?">?</bsvc:ID>
+                     </bsvc:Document_Tag_Reference>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Custom_Document_Tag>?</bsvc:Custom_Document_Tag>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Secured_Instance_Reference bsvc:Descriptor="?">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:parent_id="?" bsvc:parent_type="?" bsvc:type="?">?</bsvc:ID>
+                     </bsvc:Secured_Instance_Reference>
+                  </bsvc:Integration_Repository_Document_Data>
+               </bsvc:Output_Document_Data>
+               <!--Optional:-->
+               <bsvc:Consolidated_Report_Reference bsvc:Descriptor="?">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="?">?</bsvc:ID>
+               </bsvc:Consolidated_Report_Reference>
+               <!--Zero or more repetitions:-->
+               <bsvc:Log_File_Reference bsvc:Descriptor="?">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="?">?</bsvc:ID>
+               </bsvc:Log_File_Reference>
+            </bsvc:Background_Process_Instance_Data>
+         </bsvc:Integration_Event>
+      </bsvc:Launch_EIB_Response>
+   </soapenv:Body>
+</soapenv:Envelope>
