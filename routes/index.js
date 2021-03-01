@@ -17,7 +17,7 @@ const storage = multer.diskStorage( {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Workday Mock Service ' });
 });
 
 router.post('/Integrations/v34.1', (req, res) => {
